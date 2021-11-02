@@ -76,7 +76,7 @@ function processPlayer(teamName, playerName, runs, balls, fours, sixes, sr, oppo
     let filePath = path.join(teamPath,playerName + ".xlsx");
     let content = excelReader(filePath,playerName);
     let playerObj = {
-        teamName,
+        teamName,                               //short hand notation of { "teamName" : teamName}
         runs, 
         balls, 
         fours,
